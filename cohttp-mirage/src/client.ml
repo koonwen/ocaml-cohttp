@@ -17,7 +17,7 @@
  * %%NAME%% %%VERSION%%
  *)
 
-open Lwt.Infix
+(* open Lwt.Infix
 
 module Make
     (P : Mirage_clock.PCLOCK)
@@ -73,4 +73,4 @@ struct
 
   (* Build all the core modules from the [Cohttp_lwt] functors *)
   include Cohttp_lwt.Make_client (HTTP_IO) (Net_IO)
-end
+end *)

@@ -19,8 +19,8 @@ module Flow (F : Mirage_flow.S) = struct
       (fun () -> Channel.close ch >|= fun _ -> ())
 end
 
-module Make (S : Conduit_mirage.S) = struct
+(* module Make (S : Conduit_mirage.S) = struct
   include Flow (S.Flow)
 
   let listen s conf t = S.listen s conf (callback t)
-end
+end *)
